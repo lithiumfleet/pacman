@@ -523,6 +523,7 @@
 
 	var game = new Game('canvas');
 	//启动页
+	// hint: (function(){})()是立即执行函数, 定义后被执行. 好处是不会污染空间
 	(function(){
 		var stage = game.createStage();
 		//logo

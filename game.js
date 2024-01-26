@@ -251,6 +251,8 @@ function Game(id,params){
         var item = new Item(options);
         //动态属性
         if(item.location){
+            // hint: Object.assign(src,dest)用dest更新src, 添加/修改src属性. 浅拷贝
+            // hint: coord2position在game.js:135, 这里location是一个Map对象
             Object.assign(item,item.location.coord2position(item.coord.x,item.coord.y));
         }
         //关系绑定
